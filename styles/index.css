@@ -27,10 +27,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
     width: 30px;
     height: 30px;
-
-    background-color: transparent;
 }
 .mobile-btn span{
     width: 100%;
@@ -110,4 +109,36 @@
 }
 .side-menu.active li:nth-child(4){
     transition-delay: .6s;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    height: 100dvh;
+}
+.hero h1{
+    width: 80%;
+    margin-left: 2rem;
+
+    font-size: clamp(2.5rem, 6vw, 15rem);
+}
+.hero button{
+    padding: 1rem;
+    margin: 1rem 2rem;
+
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-weight: bolder;
+
+    border: 3px solid var(--color-1);
+    box-shadow: 4px 4px var(--color-1);
+}
+
+.ticker{
+    border: 1px solid;
+}
+.ticker ul{
+    display: flex;
 }
