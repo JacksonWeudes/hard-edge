@@ -6,6 +6,8 @@
 :root{
     --title-font: "Lexend Mega", arial, sans-serif;
     --text-font: "Public Sans", arial, sans-serif;
+
+    --color-1: #000;
 }
 
 *{
@@ -26,6 +28,7 @@ button{
 
 a{
     text-decoration: none;
+    color: var(--color-1);
 }
 
 ul{
