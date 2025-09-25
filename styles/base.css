@@ -24,9 +24,11 @@ body{
 }
 
 button{
+    border-radius: 5px;
     border: none;
     cursor: pointer;
     background-color: transparent;
+    font-weight: 800;
 }
 
 a{
@@ -36,4 +38,9 @@ a{
 
 ul{
     list-style: none;
+}
+
+h2{
+    font-size: clamp(1.9rem, 4vw, 4rem);
+    font-weight: 900;
 }

@@ -83,7 +83,7 @@
     opacity: 0;
     border: 1px solid;
 
-    transform: translateX(2rem);
+    transform: translateX(5rem);
     transition: all .4s ease-in-out;
 }
 .side-menu a{
@@ -130,7 +130,6 @@
     margin: 1rem 2rem;
 
     font-size: clamp(1.1rem, 2vw, 1.5rem);
-    font-weight: bolder;
 
     border: 3px solid var(--color-1);
     box-shadow: 4px 4px var(--color-1);
@@ -168,3 +167,54 @@
 }
 
 
+.about{
+    padding-block: 3rem;
+    border-bottom: 2px solid;
+}
+.about-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-block: 1rem;
+}
+.about-card{
+    position: relative;
+
+    max-width: 370px;
+    width: 80%;
+    min-height: 370px;
+
+    margin: auto;
+    margin-block: 1rem;
+
+    border-radius: 10px;
+    border: 3px solid var(--color-1);
+    box-shadow: 7px 7px var(--color-1);
+}
+.about-card h3{
+    margin-block: 1rem;
+
+    font-size: clamp(1.8rem, 2vw, 3.5rem);
+    text-align: center;
+}
+.about-card p{
+    width: 80%;
+
+    margin: auto;
+
+    font-size: 1rem;
+    text-align: justify;
+}
+.about-card button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    
+    padding: 1rem;
+    margin-block: 1rem;
+
+    font-size: 1.2rem;
+
+    border: 3px solid var(--color-1);
+    box-shadow: 4px 4px var(--color-1);
+}
