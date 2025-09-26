@@ -43,4 +43,8 @@ ul{
 h2{
     font-size: clamp(1.9rem, 4vw, 4rem);
     font-weight: 900;
+    margin-left: 2rem;
+}
+h3{
+    font-weight: 900;
 }
