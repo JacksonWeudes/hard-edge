@@ -50,7 +50,7 @@
             </div>
         </section>
 
-        <section class="ticker 1">
+        <section class="ticker">
             <ul aria-hidden="true">
                 <li>BRUTO</li>
                 <li>AUTÊNTICO</li>
@@ -67,7 +67,7 @@
             </ul>
         </section>
 
-        <section class="more rise">
+        <section class="more" id="rise">
             <h1>COMO SURGIU?</h1>
 
             <p>
@@ -85,7 +85,7 @@
             <button class="return-btn">VOLTAR</button>
         </section>
 
-        <section class="more traits">
+        <section class="more" id="traits">
             <h1>CARACTERISTÍCAS</h1>
 
             <p>
@@ -103,7 +103,7 @@
             <button class="return-btn">VOLTAR</button>
         </section>
 
-        <section class="more digital">
+        <section class="more" id="digital">
             <h1>COMO CHEGOU AO DIGITAL?</h1>
 
             <p>
@@ -131,7 +131,7 @@
                         <p>
                             O neo-brutalismo surgiu inspirado no brutalismo da arquitetura dos anos 50, marcado pelo concreto exposto e pela simplicidade funcional. Na web, ele reaparece como uma reação ao design minimalista e polido demais, propondo blocos retos, cores intensas e uma estética crua que valoriza a autenticidade.
                         </p>
-                        <button class="more">SAIBA MAIS</button>
+                        <button class="more-btn" data-target="rise">SAIBA MAIS</button>
                     </article>
                 </div>
                 
@@ -141,7 +141,7 @@
                         <p>
                             O neo-brutalismo se destaca por bordas grossas, tipografia pesada, cores vibrantes e contrastes fortes. O design é direto, sem gradientes ou efeitos suaves, priorizando blocos, sombras duras e uma estética propositalmente “crua” e impactante.
                         </p>
-                        <button class="more">SAIBA MAIS</button>
+                        <button class="more-btn" data-target="traits">SAIBA MAIS</button>
                     </article>
                 </div>
 
@@ -151,7 +151,7 @@
                         <p>
                             O brutalismo, nascido na arquitetura, foi reinterpretado por designers digitais que buscavam romper com padrões visuais polidos demais. Assim surgiu o neo-brutalismo na web: blocos retos, contraste forte e interfaces que lembram cartazes impressos e construções de concreto.
                         </p>
-                        <button class="more">SAIBA MAIS</button>
+                        <button class="more-btn" data-target="digital">SAIBA MAIS</button>
                     </article>
                 </div>
             </div>
@@ -162,57 +162,62 @@
         </section>
 
         <section class="elememts">
-            <h2>QUAIS SÃO <br>OS ELEMENTOS DESSE ESTILO?</h2>
+            <h2>QUAIS SÃO  <br> OS ELEMENTOS <br> DESSE ESTILO?</h2>
 
             <div class="elememts-box">
                 <article>
-                    <h3>BORDAS FORTES</h3>
+                    <span>
+                        <i class="ph-frame-corners"></i>
+                        <h3>BORDAS FORTES</h3>
+                    </span>
 
-                    <p>
-                        As bordas fortes são uma das marcas mais icônicas do neo-brutalismo. Elas geralmente aparecem pretas, espessas e bem definidas, criando uma sensação de estrutura firme e delimitada. É como se cada bloco da página tivesse sua própria moldura, destacando-se com nitidez do restante do layout.
-                    </p>
-
-                    <p>
-                        Além de reforçar a estética bruta, essas bordas servem como guia visual: elas ajudam o usuário a perceber a hierarquia das seções, separando áreas de texto, imagens e botões com clareza. Essa abordagem é uma forma de abraçar a simplicidade do design e dispensar sombras suaves e gradientes, típicos de estilos mais “polidos”.
-                    </p>
-
-                    <p>
-                        O uso de bordas grossas também é uma referência ao brutalismo da arquitetura, onde as linhas estruturais dos edifícios eram evidentes e sem disfarces. No ambiente digital, essas linhas funcionam como um elo entre o passado e o presente, trazendo ao site uma sensação de força, autenticidade e presença marcante.
-                    </p>
+                    <p>Linhas marcadas que dominam a tela.</p>
                 </article>
 
                 <article>
-                    <h3>CORES FORTES <br> E CONTRASTANTES</h3>
+                    <span>
+                        <i class="ph-palette"></i>
+                        <h3>CORES FORTES</h3>
+                    </span>
 
-                    <p>
-                        O neo-brutalismo é conhecido por seu uso ousado de paletas fortes e contrastantes, que fogem da sutileza do design minimalista. Em vez de tons neutros e degradês suaves, ele aposta em cores sólidas e vibrantes, muitas vezes primárias ou até neons chamativos. Essa escolha traz um impacto visual imediato, despertando atenção e quebrando qualquer sensação de monotonia.
-                    </p>
-
-                    <p>
-                        Essas combinações são, em muitos casos, inesperadas e provocativas. É comum ver fundos amarelos contrastando com tipografia preta, blocos vermelhos ao lado de azuis intensos ou detalhes em verde-limão que destacam elementos interativos. Essa intenção de choque visual faz parte da linguagem do estilo: não há espaço para cores discretas quando a proposta é transmitir energia bruta e autenticidade.
-                    </p>
-
-                    <p>
-                        Além do impacto estético, as cores no neo-brutalismo têm função estrutural: ajudam a separar blocos, dar hierarquia à informação e guiar o olhar do usuário. O contraste elevado torna a interface mais legível e facilita a navegação, mesmo em layouts visualmente “pesados”. Dessa forma, as cores não são apenas ornamentais; elas são parte da arquitetura do design, enfatizando a honestidade e a força do conceito brutalista.
-                    </p>
+                    <p>Fontes grandes, pesadas e sem medo.</p>
                 </article>
 
                 <article>
-                    <h3>TIPOGRAFIA OUSADA</h3>
+                    <span>
+                        <i class="ph-text-t"></i>
+                        <h3>TIPOGRAFIA OUSADA</h3>
+                    </span>
 
-                    <p>
-                        No neo-brutalismo, a tipografia é protagonista absoluta. As fontes geralmente são sem serifa, pesadas e com linhas retas, trazendo uma sensação de força e presença. Em vez de servir apenas como suporte para o conteúdo, o texto se torna parte essencial do design visual, ganhando destaque por meio de tamanhos exagerados, alinhamentos ousados e contrastes marcantes.
-                    </p>
+                    <p>Contrastes intensos que chamam atenção.</p>
+                </article>
 
-                    <p>
-                        Essa abordagem transforma palavras em elementos gráficos: títulos grandes, muitas vezes ocupando boa parte da tela, funcionam quase como pôsteres ou letreiros. A simplicidade das fontes sem serifa, somada ao uso de maiúsculas e peso bold, contribui para a estética crua e direta do estilo. Nada de enfeites ou ornamentos delicados — o objetivo é impactar de imediato.
-                    </p>
+                <article>
+                    <span>
+                        <i class="ph-square"></i>
+                        <h3>BLOCOS SÓLIDOS</h3>
+                    </span>
 
-                    <p>
-                        Além de estética, a tipografia no neo-brutalismo também serve à funcionalidade. As letras grandes e de alto contraste aumentam a legibilidade e criam hierarquia clara na página, facilitando a navegação. Dessa forma, a escolha da fonte não é apenas visual: é uma estratégia para manter a força bruta do estilo, enquanto garante clareza e comunicação eficiente.
-                    </p>
+                    <p>Estruturas pesadas e sem enfeites.</p>
                 </article>
             </div>
+        </section>
+
+        <section class="ticker 1">
+            <ul aria-hidden="true">
+                <li>BRUTO</li>
+                <li>AUTÊNTICO</li>
+                <li>CRU</li>
+                <li>CONCRETO</li>
+                <li>BLOCOS</li>
+            </ul>
+            <ul>
+                <li>BRUTO</li>
+                <li>AUTÊNTICO</li>
+                <li>CRU</li>
+                <li>CONCRETO</li>
+                <li>BLOCOS</li>
+            </ul>
         </section>
 
         <section class="hero 3">
@@ -226,37 +231,37 @@
                 <div class="exemple-card">
                     <img src="" alt="img">
                     <h3></h3>
-                    <p></p>
+                    <p>https://nation-sound-front.vercel.app/</p>
                 </div>
 
                 <div class="exemple-card">
                     <img src="" alt="img">
                     <h3></h3>
-                    <p></p>
+                    <p>https://lycee-comte-de-foix.vercel.app/</p>
                 </div>
 
                 <div class="exemple-card">
                     <img src="" alt="img">
                     <h3></h3>
-                    <p></p>
+                    <p>https://www.jukeboxhq.com/</p>
                 </div>
 
                 <div class="exemple-card">
                     <img src="" alt="img">
                     <h3></h3>
-                    <p></p>
+                    <p>https://kuma-landing-2.vercel.app/</p>
                 </div>
 
                 <div class="exemple-card">
                     <img src="" alt="img">
                     <h3></h3>
-                    <p></p>
+                    <p>https://reddit-wrapped.kadoa.com/</p>
                 </div>
 
                 <div class="exemple-card">
                     <img src="" alt="img">
                     <h3></h3>
-                    <p></p>
+                    <p>https://ronit.io/</p>
                 </div>
             </div>
         </section>
