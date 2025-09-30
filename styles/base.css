@@ -45,6 +45,7 @@ ul{
 }
 
 h2{
+    text-align: center;
     font-size: clamp(1.9rem, 4vw, 4rem);
     font-weight: 900;
     margin-left: 2rem;

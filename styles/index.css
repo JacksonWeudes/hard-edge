@@ -82,6 +82,7 @@
     margin-block: 1rem;
 
     opacity: 0;
+    border-radius: 5px;
     border: 3px solid var(--color-1);
     box-shadow: 4px 4px var(--color-1);
 
@@ -91,8 +92,11 @@
 }
 .side-menu a{
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 900;
     text-transform: uppercase;
+}
+.side-menu li:hover{
+    transform: scale(1.1);
 }
 .side-menu.active{
     right: 0;
@@ -167,12 +171,13 @@
     font-weight: 900;
 }
 .more p{
-    width: 80%;
+    width: 70%;
 
     text-align: justify;
 
     padding: 1rem;
 
+    border-radius: 10px;
     border: 3px solid var(--color-1);
     box-shadow: 4px 4px var(--color-1);
 
@@ -212,7 +217,7 @@
     align-items: center;
     gap: 2rem;
 
-    animation: scroll 10s linear infinite;
+    animation: scroll 20s linear infinite;
 }
 .ticker li{
     font-family: var(--title-font);
@@ -262,7 +267,7 @@
 .about-card p{
     width: 80%;
 
-    font-size: 1rem;
+    font-size: 1.05rem;
     text-align: justify;
 }
 .about-card button{
@@ -301,8 +306,15 @@
     padding: 2rem 1rem;
     margin: auto;
 
+    border-radius: 10px;
     border: 3px solid var(--color-1);
     box-shadow: 4px 4px var(--color-1);
+
+    transition: all .3s ease-in-out;
+}
+.elememts-box article:hover{
+    transform: translate(-6px, -6px);
+    box-shadow: 10px 10px var(--color-1);
 }
 .elememts-box span{
     display: flex;
@@ -320,3 +332,43 @@
 .elememts-box p{
     font-size: 1.2rem;
 }
+
+.exemples{
+    padding-block: 3rem;
+    border: 1px solid;
+}
+.exemples-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    margin-top: 1rem;
+}
+.exemples-card{
+    width: 80%;
+
+    padding: .9rem;
+    margin: auto;
+    text-align: center;
+
+    border-radius: 10px;
+    border: 3px solid var(--color-1);
+    box-shadow: 4px 4px var(--color-1);
+
+    transition: all .3s ease-in-out;
+}
+.exemples-card:hover{
+    transform: translate(-6px, -6px);
+    box-shadow: 10px 10px var(--color-1);
+}
+.exemples-card h3{
+    padding-block: 1rem;
+    font-size: 1.7rem;
+}
+.exemples-card img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+
+    border: 2px solid var(--color-1);
+}
+
