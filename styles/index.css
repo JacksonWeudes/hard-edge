@@ -1,5 +1,9 @@
 @import url(base.css);
 
+body.active{
+    overflow-y: hidden;
+}
+
 .header{
     position: fixed;
     top: 10px;
@@ -12,7 +16,7 @@
 
     padding: .5rem 1.5rem;
 
-    border: 1px solid var(--color-1);
+    border-block: 2px solid var(--color-1);
     background-color: #FFF;
 }
 
@@ -40,6 +44,22 @@
 
 .menu{
     display: none;
+}
+.menu a{
+    padding: .5rem 1rem;
+    margin-inline: .2rem;
+
+    font-weight: 800;
+
+    border-radius: 5px;
+    border: 3px solid var(--color-1);
+    box-shadow: 4px 4px var(--color-1);
+
+    transition: all .2s ease-in-out;
+}
+.menu a:hover{
+    transform: translateY(2px) translateX(5px);
+    box-shadow: none;   
 }
 
 .side-menu{
@@ -142,7 +162,7 @@
     border: 3px solid var(--color-1);
     box-shadow: 4px 4px var(--color-1);
 
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 .hero button:hover{
     transform: translateY(2px) translateX(5px);
@@ -262,7 +282,14 @@
     padding-block: 2rem;
 }
 .about-card h3{
+    width: 100%;
+
+    padding-bottom: .5rem;
+
+    text-align: center;
     font-size: clamp(1.8rem, 2vw, 3.5rem);
+
+    border-bottom: 2px solid var(--color-1);
 }
 .about-card p{
     width: 80%;
@@ -277,7 +304,7 @@
     border: 3px solid var(--color-1);
     box-shadow: 4px 4px var(--color-1);
 
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 .about-card button:hover{
     transform: translateY(2px) translateX(5px);
@@ -310,7 +337,7 @@
     border: 3px solid var(--color-1);
     box-shadow: 4px 4px var(--color-1);
 
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 .elememts-box article:hover{
     transform: translate(-6px, -6px);
@@ -345,6 +372,7 @@
     margin-top: 1rem;
 }
 .exemples-card{
+    display: block;
     width: 80%;
 
     padding: .9rem;
@@ -355,7 +383,7 @@
     border: 3px solid var(--color-1);
     box-shadow: 4px 4px var(--color-1);
 
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 .exemples-card:hover{
     transform: translate(-6px, -6px);
@@ -372,3 +400,144 @@
     border: 2px solid var(--color-1);
 }
 
+.contact{
+    padding-block: 3rem;
+}
+.contact-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 60%;
+
+    margin: auto;
+    margin-top: 1rem;
+}
+.contact-form input{
+    padding: 10px 15px;
+
+    border: 2px solid ;
+    font-size: 1rem;
+}
+.contact-form textarea{
+    height: 150px;
+    padding: 10px 15px;
+
+    font-size: 1rem;
+    border: 2px solid ;
+}
+.contact-form button{
+    display: block;
+    width: 50%;
+
+    margin: auto;
+    padding: .8rem 2rem;
+    font-size: 1.2rem;
+
+    border: 3px solid var(--color-1);
+    box-shadow: 4px 4px var(--color-1);
+
+    transition: all .2s ease-in-out;
+}
+.contact-form button:hover{
+    transform: translateY(2px) translateX(5px);
+    box-shadow: none;   
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+
+    border: 1px solid;
+}
+.footer a{
+    position: relative;
+
+    width: 50px;
+    height: 50px;
+
+    padding: 1rem;
+
+    border-radius: 5px;
+    border: 2px solid var(--color-1);
+    box-shadow: 4px 4px var(--color-1);
+
+    transition: all .2s ease-in-out;
+}
+.footer a:hover{
+    transform: translateY(2px) translateX(5px);
+    box-shadow: none;   
+}
+.footer i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .mobile-btn{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .menu a{
+        font-weight: 700;
+        margin-inline: .5rem;
+    }
+    .more p{
+        width: 50%;
+        padding: 1.5rem;
+    }
+    .exemples-card{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .header{
+        padding: 1rem 1.5rem;
+    }
+    .mobile-btn{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+    .hero{
+        height: 110dvh;
+    }
+    .about-box{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .more{
+        width: 50%;
+        border-right: 2px solid;
+
+        padding: 2rem;
+    }
+    .more p{
+        width: 80%;
+        padding: 2rem;
+    }
+    .exemples-box{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .exemples-card{
+        width: 100%;
+        margin: none;
+    }
+    .contact{
+        width: 50%;
+        margin: auto;
+    }
+}

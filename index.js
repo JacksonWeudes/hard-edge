@@ -25,6 +25,7 @@ function initMoreScreen()
 
             if(targetSection){
                 targetSection.classList.add("active")
+                document.body.classList.add("active")
                 console.log(`Adcionou active em: ${targetSection}`)
             }
             else{
@@ -38,6 +39,7 @@ function initMoreScreen()
             const parentSection = btn.closest(".more")
 
             parentSection.classList.remove("active")
+            document.body.classList.remove("active")
         })
     })
 }
