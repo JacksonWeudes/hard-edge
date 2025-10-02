@@ -139,21 +139,27 @@ body.active{
 }
 
 .hero{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100dvh;
+}
+.hero img{
+    display: none;
+}
+.hero-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-
-    height: 100dvh;
 }
-.hero h1{
+.hero-info h1{
     width: 80%;
     margin-left: 2rem;
 
     font-size: clamp(3rem, 6vw, 15rem);
     font-weight: 900;
 }
-.hero button{
+.hero-info button{
     padding: 1rem;
     margin: 1rem 2rem;
 
@@ -164,7 +170,7 @@ body.active{
 
     transition: all .2s ease-in-out;
 }
-.hero button:hover{
+.hero-info button:hover{
     transform: translateY(2px) translateX(5px);
     box-shadow: none;
 }
@@ -505,6 +511,10 @@ body.active{
     .header{
         padding: 1rem 1.5rem;
     }
+    .header h1{
+        font-size: 2rem;
+        font-weight: 900;
+    }
     .mobile-btn{
         display: none;
     }
@@ -512,7 +522,17 @@ body.active{
         display: flex;
     }
     .hero{
+        position: relative;
+        grid-template-columns: 1fr 1fr;
         height: 110dvh;
+    }
+    .hero img{
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        height: 700px;
     }
     .about-box{
         grid-template-columns: 1fr 1fr 1fr;
