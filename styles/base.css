@@ -10,12 +10,14 @@
     --ticker-font: "Anton", arial, sans-serif; 
 
     --color-1: #000;
-    --main-color: #ffbe0b;
-    --cards-color: #8338ec;
-    --btns-color: #ff006e;
-    --ticker-color: #fb5607;
+    --main-color: #a8dadc;
+    --head-color: #457b9d;
+    --btns-color: #1d3557;
+    --ticker-color: #e63946;
+    --side-color: #00f5d4;
     --tagline-color: #f4f1de;
 }
+
 
 *{
     font-family: var(--text-font);
@@ -35,6 +37,7 @@ button{
     cursor: pointer;
     background-color: var(--btns-color);
     font-weight: 800;
+    color: var(--tagline-color);
 }
 
 p{
@@ -43,7 +46,7 @@ p{
 
 a{
     text-decoration: none;
-    color: var(--color-1);
+    color: var(--tagline-color);
 }
 
 ul{

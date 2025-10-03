@@ -17,7 +17,7 @@ body.active{
     padding: .5rem 1.5rem;
 
     border-block: 3px solid var(--color-1);
-    background-color: var(--cards-color);
+    background-color: var(--head-color);
 }
 
 .logo{
@@ -74,7 +74,7 @@ body.active{
 
     z-index: 9999;
     border: 1px solid var(--color-1);
-    background-color: var(--main-color);
+    background-color: var(--side-color);
 
     transition: right .4s ease-in-out;
 }
@@ -108,7 +108,7 @@ body.active{
     border-radius: 5px;
     border: 3px solid var(--color-1);
     box-shadow: 4px 4px var(--color-1);
-    background-color: var(--cards-color);
+    background-color: var(--tagline-color);
 
     transform: translateX(5rem);
     transition: all .4s ease-in-out;
@@ -117,6 +117,7 @@ body.active{
     font-size: 2rem;
     font-weight: 900;
     text-transform: uppercase;
+    color: var(--color-1);
 }
 .side-menu li:hover{
     transform: scale(1.1);
@@ -192,7 +193,7 @@ body.active{
 
     padding-block: 1rem;
     z-index: 9999;
-    background-color: var(--main-color);
+    background-color: var(--side-color);
 
     transition: left .4s ease-in-out;
 }
@@ -209,7 +210,7 @@ body.active{
     border-radius: 10px;
     border: 3px solid var(--color-1);
     box-shadow: 4px 4px var(--color-1);
-    background-color: var(--cards-color);
+    background-color: var(--tagline-color);
 }
 .more button{
     padding: .8rem 2rem;
@@ -237,7 +238,7 @@ body.active{
 
     user-select: none;
     overflow: hidden;
-    border-block: 4px solid;
+    border-block: 4px solid var(--color-1);
     background-color: var(--ticker-color);
 }
 .ticker ul{
@@ -250,6 +251,7 @@ body.active{
     animation: scroll 20s linear infinite;
 }
 .ticker li{
+    font-style: italic;
     font-family: var(--title-font);
     font-size: clamp(2rem, 4vw, 5rem);
     font-weight: 900;
@@ -279,7 +281,7 @@ body.active{
     border-radius: 10px;
     border: 3px solid var(--color-1);
     box-shadow: 7px 7px var(--color-1);
-    background-color: var(--cards-color);
+    background-color: var(--tagline-color);
 }
 .about-card article{
     display: flex;
@@ -288,17 +290,19 @@ body.active{
     align-items: center;
     height: 100%;
 
-    padding-block: 2rem;
+    padding-bottom: 2rem;
 }
 .about-card h3{
     width: 100%;
 
-    padding-bottom: .5rem;
+    padding-block: 1.5rem;
 
     text-align: center;
     font-size: clamp(1.8rem, 2vw, 3.5rem);
 
-    border-bottom: 2px solid var(--color-1);
+    border-radius: 5px 5px 0 0;
+    border-bottom: 3px solid var(--color-1);
+    background-color: var(--head-color);
 }
 .about-card p{
     width: 80%;
@@ -362,7 +366,7 @@ body.active{
     border-radius: 10px;
     border: 3px solid var(--color-1);
     box-shadow: 7px 7px var(--color-1);
-    background-color: var(--cards-color);
+    background-color: var(--tagline-color);
 
     transition: all .2s ease-in-out;
 }
@@ -410,7 +414,7 @@ body.active{
     border-radius: 10px;
     border: 3px solid var(--color-1);
     box-shadow: 7px 7px var(--color-1);
-    background-color: var(--cards-color);
+    background-color: var(--main-color);
 
     transition: all .2s ease-in-out;
 }
@@ -482,7 +486,7 @@ body.active{
     padding: 1rem;
 
     border-top: 4px solid;
-    background-color: var(--cards-color);
+    background-color: var(--tagline-color);
 }
 .footer a{
     position: relative;
